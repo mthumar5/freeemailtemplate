@@ -1,0 +1,12 @@
+{
+  "name": "Free Email Template",
+  "short_name": "freeemailtemplate",
+  "theme_color": "#0000ff",
+  "background_color": "#fff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "description" : "Free Download | Browse over 1500 html email templates and select the most suitable to your business.",
+ 
+}
