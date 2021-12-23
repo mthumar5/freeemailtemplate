@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Beatle
+    </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="access/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="access/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="access/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="access/css/all-skins.min.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="access/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="access/css/daterangepicker.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="access/css/font.css">
+    <!--style-->
+    <link rel="stylesheet" href="access/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	 <!-- SweetAlert2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+	
+	 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+	
+		
+
+	
+  </head> 
+  <body class="skin-blue sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="mdashboard.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini">
+            <img class="view_icon" src="access/img/indian-railway-logo.png">
+          </span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <div class="navbar-custom-menu pull-left">
+            <ul class="nav navbar-nav">
+              <li class="pull-right page-name"> INDIAN RAILWAYS - PROFILE 
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#" data-toggle="control-sidebar"> 
+                  <i class="fa fa-fw fa-sign-out">
+                  </i> Sign out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+               <ul class="sidebar-menu" data-widget="tree">
+                  <li class="active"><a href="mdashboard.html">
+					<i class="fa fa-dashboard"></i>
+					<span>Dashboard</span>
+					</a>
+				  </li>
+				  <li class="">
+						<a href="user.html" class="pa-12-0 text-cen">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<span class="text-lf">All User </span>
+						</a>
+					</li>
+				    <li class=""><a href="profile.html" class="pa-12-0 text-cen">
+						<i class="fa fa-user" style=" margin-left: 3px;"></i>
+						<span class="text-lf">PROFILE</span>
+						</a>
+					</li>
+				  </ul>
+            </section>
+        <!-- /.sidebar -->
+      </aside>
+      <div class="content-wrapper">
+        <section class="content">
+          <div class="row profile_view" >
+            <div class="">
+			<center><h1 class="f25 b600 title_text"><span>Profile</span></h1>
+			  <div class="title_img"><img src="access/img/title_w.png"></div>
+			  </center>
+			  
+			  
+			  <div class="form-group ">
+														<div class="avatar-upload">
+															<div class="avatar-edit">
+																<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+																	<label for="imageUpload"></label>
+															</div>
+															<div class="avatar-preview">
+																<div id="imagePreview" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqsb6lK-PlD1kHFoubbiC-jN21tqj9ADz9crJ2rBIstz1gKFPE&usqp=CAU);">
+																</div>
+															</div>
+														</div>
+													</div>
+			  
+			  
+              <div class="col-lg-6 col-sm-6">
+                <div clas="col-md-12">
+                  <div class="boxs">
+                    <div class="box-header with-border">
+                      <i class="fa fa-server" aria-hidden="true">
+                      </i>
+                      <h3 class="box-title"> Basic info 
+                      </h3>
+                      <div class="box-tools pull-right">
+                      </div>
+                    </div>
+                    <div class="box-body cust_hight">
+					
+					
+
+
+					  <p>Name 
+                        <span class="data">Mehul Thumar
+                        </span>
+                      </p>
+                      <p>Designation 
+                        <span class="data">SSE
+                        </span>
+                      </p>
+                      <p>Colonies
+                        <span class="data">19
+                        </span>
+                      </p>
+                      <p>Phone No. 
+                        <span class="data">+91 8511511038
+                        </span>
+                      </p>
+                      <p>E Mail
+                        <span class="data">mehul@gmail.com
+                        </span>
+                      </p>
+                      <p>Zone 
+                        <span class="data"> NER
+                        </span>
+                      </p>
+                      <p>Division  
+                        <span class="data">Lumbding
+                        </span>
+                      </p>
+					  
+					   <p>Dashboard Type  
+                        <span class="data">ADMINISTRATOR
+                        </span>
+                      </p>
+					  
+					  
+					  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="">
+                  <div class="">
+                    <div class="col-md-12">
+                      <div id="profile-hide-">
+                        <div class="round_border">
+                          <div class="bi_box auditors">
+                            <p>Colony Managers : 
+                              <span>3
+                              </span> 
+                            </p>
+                            <img class="auditors_img" alt="" src="access/img/all_user_new.png">
+                          </div>
+                        </div>	
+                      </div>
+                    </div>
+                  </div>
+                </div>		
+              </div>
+			  
+			  <div class="col-md-3">
+                <div class="">
+                  <div class="">
+                    <div class="col-md-12">
+                      <div id="profile-hide-">
+                        <div class="round_border">
+                          <div class="bi_box auditors">
+                            <p>Upper Management :
+                              <span>4
+                              </span> 
+                            </p>
+                            <img class="auditors_img" alt="" src="access/img/all_user_new.png">
+                          </div>
+                        </div>	
+                      </div>
+                    </div>
+                  </div>
+                </div>		
+              </div>
+			  
+			   
+            </div>
+            
+			
+		
+			
+			
+			
+			
+			 <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                   
+                    
+					
+					
+<center>Colony Managers </center>
+<div class="view-edi-info">
+					  <p>ADRM <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Managers"></i>
+                        
+                      </p>
+                      <p>Sr DEN/C/LMG 
+                        <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Managers"></i>
+                      </p>
+                      <p>SR. DEN/IV/LMG	
+                        <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Managers"></i>
+                      </p>
+                      
+					  
+					  
+					  
+                    </div>
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Colony-Managers">+</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+              
+			<div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                  
+						<center>Upper  Managers </center>
+						 <div class="view-edi-info">
+						<p>SSE/W/N/LMG	 <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Upper-Managers"></i></p>
+						<p>SSE/W/WS/LMG  <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Upper-Managers"></i></p>
+						<p>SSE/W/S/LMG  <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Upper-Managers"></i></p>
+                    </div>
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Upper-Managers">+</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+			  
+			  
+			  <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                 
+						<center>Colony Type   </center>
+						  <div class="view-edi-info">
+						<p>TYPE-I <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Type"></i></p>
+						<p>TYPE-II	<i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Type"></i></p>
+						<p>TYPE-III		 <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Type"></i></p>
+						<p>TYPE-IV	<i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Type"></i></p>	
+						<p>TYPE-V<i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Colony-Type"></i></p>		
+
+                    </div>
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Colony-Type">+</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                 
+						<center>Quter Type   </center>
+						  <div class="view-edi-info">
+						<p>DS <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Quter-Type"></i></p>
+						<p>SP	<i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Quter-Type"></i></p>
+						<p>SS	 <i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#Quter-Type"></i></p>
+							
+
+                    </div>
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Quter-Type">+</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+			  
+			<div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                 
+						<center>Colony Details   </center>
+						  <div class="view-edi-info">
+						<p>RELIEF YARD<i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+						<p>BRICF FIELD<i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+						<p>NEW COLONY	 <i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+							<p>		SOUTH HILL <i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+							<p>		LOCO COLONY <i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+							<p>		RPSF COLONY <i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+								<p>	SK PAUL TILA <i class="fa fa-pencil-square-o" aria-hidden="true"  data-toggle="modal" data-target="#Colony-Details"></i></p>
+
+							
+
+                    </div>
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Colony-Details">+</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+			  
+			  
+			  
+			  
+			  
+			  <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <div class="boxs view-ed-btn">
+                 
+						<center>Section Details   </center>
+						  <div class="view-edi-info">
+						
+						<center class="no-data">No Data</center>
+							
+
+                    </div>
+					 
+					<div class="add-new-item">
+					<a href="#"  data-toggle="modal" data-target="#Section-Details">+</a>
+					</div>
+                  </div>
+				  
+                </div>
+              </div>
+			  
+			  
+			  
+			  <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <center class="no-data ">
+						<a href="Manage-Users.html" class="user-manage-btn">
+						Manage Users<br>
+						<div class="add-new-item"><i class="fa fa-cogs" aria-hidden="true"></i>
+</div>
+						</a>
+						</center>
+				  
+                </div>
+              </div>
+			  
+			  
+			  <div class="col-lg-3 col-sm-3">
+                <div clas="col-md-12">
+                  <center class="no-data ">
+						<a href="user.html" class="user-manage-btn">
+						View All Users<br>
+						<div class="add-new-item"><i class="fa fa-eye" aria-hidden="true"></i>
+
+</div>
+						</a>
+						</center>
+				  
+                </div>
+              </div>
+			  
+			  
+			  
+          </div>
+		  
+		  
+		 
+          
+		  
+		   
+		  
+		  
+		</section>
+      </div>
+	  
+	  
+	<!-- Colony Managers -->
+  <div class="modal fade" id="Colony-Managers" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Colony Managers</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : ADRM">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+	  
+	<!-- Upper Managers -->
+  <div class="modal fade" id="Upper-Managers" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upper Managers</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : SSE/W/N/LMG">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+	
+	  
+	  	   <!-- Colony Type -->
+  <div class="modal fade" id="Colony-Type" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Colony Type</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : TYPE-I xxxx">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+	  
+	   <!-- Quter Type -->
+  <div class="modal fade" id="Quter-Type" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Quter Type</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : DS">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+	  
+	  
+	 <!-- Colony Details -->
+  <div class="modal fade" id="Colony-Details" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Colony Details</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : STAFF QRTS. UNDER SSE/W/ N/LMG ">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+  <!-- Section-Details -->
+  <div class="modal fade" id="Section-Details" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Section Details</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="" name="" required="" 
+		  placeholder="Ex : RELIEF YARD">
+		  <br>
+		   <center><button type="button" class="btn btn-success" data-dismiss="modal">Submit</button></center>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version
+          </b> 2.0
+        </div>
+        <strong>Copyright &copy; 2021 
+          <a href="#">Beatle Buddy
+          </a>.
+        </strong> All rights
+        reserved.
+      </footer>
+    </div>      
+    <!-- ./wrapper -->
+	
+    <!-- jQuery 3 -->
+    <script src="access/js/jquery.min.js">
+    </script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="access/js/jquery-ui.min.js">
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="access/js/bootstrap.min.js">
+    </script>
+    <!-- daterangepicker -->
+    <script src="access/js/daterangepicker.js">
+    </script>
+    <!-- datepicker -->
+    <script src="access/js/bootstrap-datepicker.min.js">
+    </script>
+    <!-- weekly-performance START -->
+    <script src="access/js/RGraph.svg.common.core6.js">
+    </script>
+    <script src="access/js/RGraph.svg.line5.js">
+    </script>
+    <script src="access/js/RGraph.svg.common.tooltips4.js">
+    </script>
+    <!-- AdminLTE App -->
+    <script src="access/js/adminlte.min.js"> </script>
+	
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+  $(".auditors_list_btn").click(function(){
+    $(".profile_view").hide();
+     $(".auditors_list").show();
+	 $(".profile_edit").hide();
+	  $(".creat_auditors").hide();
+	 
+  });
+
+  // Viewer details Show
+  $(".creat_auditors_btn").click(function(){
+    $(".profile_view").hide();
+     $(".auditors_list").hide();
+     $(".creat_auditors").show();
+     $(".profile_edit").hide();
+   
+  });
+  // end here 
+  
+  // Viewer details Show
+  $(".profile_edit_btn").click(function(){
+    $(".profile_view").hide();
+     $(".auditors_list").hide();
+     $(".creat_auditors").hide();
+     $(".profile_edit").hide();
+	  $(".profile_edit").show();
+   
+  });
+  // end here 
+  
+
+  $(".profile_view_btn").click(function(){
+      $(".profile_view").show();
+     $(".auditors_list").hide();
+     $(".creat_auditors").hide();
+     $(".profile_edit").hide();
+	  
+  });
+});
+</script>	
+	
+	
+	
+    <script>
+      var linex = new RGraph.SVG.Line({
+        id: 'weekly-performance',
+        data:  [
+          [1,0,0,2,0,0,5]
+        ],
+        options: {
+          xaxisLabels:['FR','SA','SU','MO','TU','WE','TH'],
+          labelsSize: 2,
+          yaxisUnitsPost: '',
+          xaxisTextColor: '#fff',
+          yaxisTextColor: '#fff',
+          tooltips: ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'],
+          colors: ['#009200'],
+          shadow: true,
+          linewidth: 2,
+          shadowBlur: 3,
+          tickmarks: 'circle',
+          gutterLeft:   25,
+          gutterTop:    15,
+          gutterRight:  25,
+          gutterBottom: 25,
+          ticksize: 5,
+          textColor: 'white',
+          shadowOpacity: 0.25,
+          spline: true
+        }
+      }
+                                     ).trace();
+    </script>
+    <!-- weekly-performance END -->
+    <!-- Weekly Aduit Count START -->
+    <script src="access/js/RGraph.svg.common.core3.js">
+    </script>
+    <script src="access/js/RGraph.svg.common.tooltips2.js">
+    </script>
+    <script src="access/js/RGraph.svg.bar1.js">
+    </script>
+	
+	
+    <script>
+      new RGraph.SVG.Bar({
+        id: 'chart-container-fcount',
+        data: [0,0,0,0,3,3,2],
+        options: {
+          colorsSequential: true,
+          colors: ['Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)'], 
+          tooltips: ['P&C : 2<br>TAI : 2',
+                     'P&C : 2<br>TAI : 2',
+                     'P&C : 2<br>TAI : 2',
+                     'P&C : 2<br>TAI : 2',
+                     'P&C : 2<br>TAI : 1',
+                     'P&C : 2<br>TAI : 1',
+                     'P&C : 1<br>TAI : 1'],
+          xaxisLabels: ['SA','SU','MO','TU','WE','TH','FR'],
+          xaxisColor: '#aaa',
+          yaxisColor: '#aaa',
+          yaxisLabelsCount: 5,
+          labelsAbove: true,
+          gutterLeft:   0,
+          gutterTop:    0,
+          gutterRight:  0,
+          gutterBottom: 0,
+          gutterLeft: 0,
+          yaxisScaleUnitsPost: '',
+          marginLeft: 30,
+          marginRight: 25,
+          marginTop: 22,
+          marginBottom: 38,
+          textColor: 'white',
+          textSize: 9,
+          hmargin: 15
+        }
+      }
+                        ).draw().on('beforetooltip', function ()
+                                    {
+        RGraph.SVG.tooltips.style.backgroundColor = 'black';
+        RGraph.SVG.tooltips.style.color           = 'white';
+        RGraph.SVG.tooltips.style.fontWeight      = 'bold';
+      }
+                                   );
+    </script>
+    <!-- Weekly Aduit Count END -->
+    <!--  Subscription / Weekly Performance Chart START -->
+    <script src="access/js/pie-chart.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#demo-pie-2').pieChart({
+          barColor: '#009200' ,
+          trackColor:  '#f3fbf3',
+          lineCap: 'butt',
+          lineWidth: 15,
+          onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+          }
+        }
+                                 );
+        $('#demo-pie-3').pieChart({
+          barColor: '#e5b00c',
+          trackColor:    '#fffcf3',
+          lineCap:'square',
+          lineWidth: 15,
+          onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+          }
+        }
+                                 );
+      }
+                       );
+    </script>
+    <!-- ubscription / Weekly Performance END -->
+    <!--    Top Today Report / Monthly Report START -->	  
+    <script>
+      $("input[name='test']").click(function () {
+        $('#Today-report').css('display', ($(this).val() === 'a') ? 'block':'none');
+        $('#month-report').css('display', ($(this).val() === 'b') ? 'block':'none');
+        $('#date-selection').css('display', ($(this).val() === 'b') ? 'block':'none');
+      }
+                                   );
+    </script>
+    <!-- Top Today Report / Monthly Report END -->
+    <!--   Date START -->
+    <script>
+      $(document).ready(function() {
+        $("#FromDate").datepicker({
+          format: 'dd-mm-yyyy'
+        }
+                                 );
+        $("#ToDate").datepicker({
+          format: 'dd-mm-yyyy'
+        }
+                               );
+        //document.forms["frmSearch"].submit();
+      }
+                       );
+      function validateDate() {
+        var D1 = document.getElementById("ToDate");
+        var D2 = document.getElementById("FromDate");
+        if (D1.value.trim() == "") {
+          D1.style.border = "1px solid red";
+          return false;
+        }
+        if (D2.value.trim() == "") {
+          D2.style.border = "1px solid red";
+          return false;
+        }
+      }
+    </script> 
+    <!-- Date END -->
+	
+	<script>
+  $(document).ready(function () {
+    $("#station").CreateMultiCheckBox({
+      width: '230px', defaultText : 'Select Station', height:'250px' }
+                                     );
+  }
+                   );
+  $(document).ready(function () {
+    $(document).on("click", ".MultiCheckBox", function () {
+      var detail = $(this).next();
+      detail.show();
+    }
+                  );
+    $(document).on("click", ".MultiCheckBoxDetailHeader input", function (e) {
+      e.stopPropagation();
+      var hc = $(this).prop("checked");
+      $(this).closest(".MultiCheckBoxDetail").find(".MultiCheckBoxDetailBody input").prop("checked", hc);
+      $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+    }
+                  );
+    $(document).on("click", ".MultiCheckBoxDetailHeader", function (e) {
+      var inp = $(this).find("input");
+      var chk = inp.prop("checked");
+      inp.prop("checked", !chk);
+      $(this).closest(".MultiCheckBoxDetail").find(".MultiCheckBoxDetailBody input").prop("checked", !chk);
+      $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+    }
+                  );
+    $(document).on("click", ".MultiCheckBoxDetail .cont input", function (e) {
+      e.stopPropagation();
+      $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+      var val = ($(".MultiCheckBoxDetailBody input:checked").length == $(".MultiCheckBoxDetailBody input").length)
+      $(".MultiCheckBoxDetailHeader input").prop("checked", val);
+    }
+                  );
+    $(document).on("click", ".MultiCheckBoxDetail .cont", function (e) {
+      var inp = $(this).find("input");
+      var chk = inp.prop("checked");
+      inp.prop("checked", !chk);
+      var multiCheckBoxDetail = $(this).closest(".MultiCheckBoxDetail");
+      var multiCheckBoxDetailBody = $(this).closest(".MultiCheckBoxDetailBody");
+      multiCheckBoxDetail.next().UpdateSelect();
+      var val = ($(".MultiCheckBoxDetailBody input:checked").length == $(".MultiCheckBoxDetailBody input").length)
+      $(".MultiCheckBoxDetailHeader input").prop("checked", val);
+    }
+                  );
+    $(document).mouseup(function (e) {
+      var container = $(".MultiCheckBoxDetail");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+      }
+    }
+                       );
+  }
+                   );
+  var defaultMultiCheckBoxOption = {
+    width: '220px', defaultText: 'Select Below', height: '200px' };
+  jQuery.fn.extend({
+    CreateMultiCheckBox: function (options) {
+      var localOption = {
+      };
+      localOption.width = (options != null && options.width != null && options.width != undefined) ? options.width : defaultMultiCheckBoxOption.width;
+      localOption.defaultText = (options != null && options.defaultText != null && options.defaultText != undefined) ? options.defaultText : defaultMultiCheckBoxOption.defaultText;
+      localOption.height = (options != null && options.height != null && options.height != undefined) ? options.height : defaultMultiCheckBoxOption.height;
+      this.hide();
+      this.attr("multiple", "multiple");
+      var divSel = $("<div class='MultiCheckBox'>" + localOption.defaultText + "<span class='k-icon k-i-arrow-60-down'><svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' class='svg-inline--fa fa-sort-down fa-w-10 fa-2x'><path fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z' class=''></path></svg></span></div>").insertBefore(this);
+      divSel.css({
+        "width": localOption.width }
+                );
+      var detail = $("<div class='MultiCheckBoxDetail'><div class='MultiCheckBoxDetailHeader'><input type='checkbox' class='mulinput' value='-1982' /><div>Select All</div></div><div class='MultiCheckBoxDetailBody'></div></div>").insertAfter(divSel);
+      detail.css({
+        "width": parseInt(options.width) + 10, "max-height": localOption.height }
+                );
+      var multiCheckBoxDetailBody = detail.find(".MultiCheckBoxDetailBody");
+      this.find("option").each(function () {
+        var val = $(this).attr("value");
+        if (val == undefined)
+          val = '';
+        multiCheckBoxDetailBody.append("<div class='cont'><div><input type='checkbox' class='mulinput' value='" + val + "' /></div><div>" + $(this).text() + "</div></div>");
+      }
+                              );
+      multiCheckBoxDetailBody.css("max-height", (parseInt($(".MultiCheckBoxDetail").css("max-height")) - 28) + "px");
+    }
+    ,
+    UpdateSelect: function () {
+      var arr = [];
+      this.prev().find(".mulinput:checked").each(function () {
+        arr.push($(this).val());
+      }
+                                                );
+      this.val(arr);
+    }
+    ,
+  }
+                  );
+</script>
+<script>
+  $("input:file").change(function (){
+    var fileName = $(this).val();
+    if(fileName.length >0){
+      $(this).parent().children('span').html(fileName);
+    }
+    else{
+      $(this).parent().children('span').html("Choose file");
+    }
+  }
+                        );
+  //file input preview
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('.signature img').attr('src', e.target.result);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  $("input:file").change(function(){
+    readURL(this);
+  }
+                        );
+</script>
+
+<script>
+// Alert Modal Type
+		$(document).on('click', '#success', function(e) {
+			swal(
+				'Success',
+				' Auditor has been Created  <b style="color:green;">Done</b> !',
+				'success'
+			)
+		});
+
+
+			$(document).on('click', '#success-profile', function(e) {
+			swal(
+				'Success',
+				' Your Profile has been Update  <b style="color:green;">Done</b> !',
+				'success'
+			)
+		});
+
+
+		$(document).on('click', '#error', function(e) {
+			swal(
+				'Error!',
+				'You clicked the <b style="color:red;">error</b> button!',
+				'error'
+			)
+		});
+
+		$(document).on('click', '#warning', function(e) {
+			swal(
+				'Warning!',
+				'You clicked the <b style="color:coral;">warning</b> button!',
+				'warning'
+			)
+		});
+
+		$(document).on('click', '#info', function(e) {
+			swal(
+				'Info!',
+				'You clicked the <b style="color:cornflowerblue;">info</b> button!',
+				'info'
+			)
+		});
+
+		$(document).on('click', '#question', function(e) {
+			swal(
+				'Question!',
+				'You clicked the <b style="color:grey;">question</b> button!',
+				'question'
+			)
+		});
+
+	// Alert With Custom Icon and Background Image
+		$(document).on('click', '#icon', function(event) {
+			swal({
+				title: 'Custom icon!',
+				text: 'Alert with a custom image.',
+				imageUrl: 'https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg',
+				imageWidth: 200,
+				imageHeight: 200,
+				imageAlt: 'Custom image',
+				animation: false
+			})
+		});
+
+		$(document).on('click', '#image', function(event) {
+			swal({
+				title: 'Custom background image, width and padding.',
+				width: 700,
+				padding: 150,
+				background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+			})
+		});
+
+	// Alert With Input Type
+		$(document).on('click', '#subscribe', function(e) {
+			swal({
+			  title: 'Submit email to subscribe',
+			  input: 'email',
+			  inputPlaceholder: 'Example@email.xxx',
+			  showCancelButton: true,
+			  confirmButtonText: 'Submit',
+			  showLoaderOnConfirm: true,
+			  preConfirm: (email) => {
+			    return new Promise((resolve) => {
+			      setTimeout(() => {
+			        if (email === 'example@email.com') {
+			          swal.showValidationError(
+			            'This email is already taken.'
+			          )
+			        }
+			        resolve()
+			      }, 2000)
+			    })
+			  },
+			  allowOutsideClick: false
+			}).then((result) => {
+			  if (result.value) {
+			    swal({
+			      type: 'success',
+			      title: 'Thank you for subscribe!',
+			      html: 'Submitted email: ' + result.value
+			    })
+			  }
+			})
+		});
+
+	// Alert Redirect to Another Link
+		$(document).on('click', '#link', function(e) {
+		    swal({
+				title: "Are you sure?", 
+				text: "Auditors   has been Delete", 
+				type: "warning",
+				confirmButtonText: "Delete",
+				showCancelButton: true
+		    })
+		    	.then((result) => {
+					if (result.value) {
+					    window.location = '#';
+					} else if (result.dismiss === 'cancel') {
+					    swal(
+					      'Cancelled',
+					      '',
+					      'error'
+					    )
+					}
+				})
+		});
+		
+		
+		
+		
+</script>
+	
+	<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+
+<script>
+		function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+		</script>
+
+	</body>
+<style>
+		
+.avatar-upload {
+  position: relative;
+ 
+  margin: 0px auto;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #0c81e6;
+    border: 2px solid #0c81e6;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #fff;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+}
+.avatar-upload .avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: 3px solid #0887e1;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+    PADDING: 0;
+    margin: 0 auto;
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.avatar-upload {
+    width: 150px;
+    height: 150px;
+}
+		</style>
+
+
+  </body>
+</html>

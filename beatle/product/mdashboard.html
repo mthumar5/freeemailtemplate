@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<html>
+     <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title> Beatle</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <!-- Bootstrap 3.3.7 -->
+      <link rel="stylesheet" href="access/css/bootstrap.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="access/css/font-awesome.min.css">
+      <!-- Theme style -->
+      <link rel="stylesheet" href="access/css/AdminLTE.min.css">
+      <link rel="stylesheet" href="access/css/all-skins.min.css">
+      <!-- Date Picker -->
+      <link rel="stylesheet" href="access/css/bootstrap-datepicker.min.css">
+      <!-- Daterange picker -->
+      <link rel="stylesheet" href="access/css/daterangepicker.css">
+      <!-- Google Font -->
+      <link rel="stylesheet" href="access/css/font.css">
+      <!--style-->
+                      <link rel="stylesheet" href="access/css/style.css">
+		   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+   </head> 
+   <body class="skin-blue sidebar-mini sidebar-collapse">
+      <div class="wrapper">
+         <header class="main-header">
+            <!-- Logo -->
+            
+			
+			
+			<a href="mdashboard.html" class="logo">
+               <!-- mini logo for sidebar mini 50x50 pixels -->
+               <span class="logo-mini"><img class="view_icon" src="access/img/indian-railway-logo.png"></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+               <!-- Sidebar toggle button-->
+               <div class="navbar-custom-menu pull-left">
+                  <ul class="nav navbar-nav">
+                     <li class="pull-right page-name"> INDIAN RAILWAYS </li>
+                  </ul>
+               </div>
+               <div class="navbar-custom-menu">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <a href="#" data-toggle="control-sidebar"> <i class="fa fa-fw fa-sign-out"></i> Sign out</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <!-- Left side column. contains the logo and sidebar -->
+         <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+               <ul class="sidebar-menu" data-widget="tree">
+                  <li class="active"><a href="mdashboard.html">
+					<i class="fa fa-dashboard"></i>
+					<span>Dashboard</span>
+					</a>
+				  </li>
+				  <li class="">
+						<a href="user.html" class="pa-12-0 text-cen">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<span class="text-lf">All User </span>
+						</a>
+					</li>
+				    <li class=""><a href="profile.html" class="pa-12-0 text-cen">
+						<i class="fa fa-user" style=" margin-left: 3px;"></i>
+						<span class="text-lf">PROFILE</span>
+						</a>
+					</li>
+				  </ul>
+            </section>
+            <!-- /.sidebar -->
+         </aside>
+         <div class="content-wrapper">
+            <section class="content">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="boxs">
+                        <div class="box-header with-border" style="  padding: 2px 0 6px 14px;height: 30px;">
+                           <form id='form-id' class="select_report">
+                              <input id='Today-report-' name='test' type='radio' value="a" checked /> <i class="fa fa-newspaper-o" aria-hidden="true"></i> Today Report
+                              <input  id='month-report-' name='test' type='radio' value="b" /> <i class="fa fa-newspaper-o" aria-hidden="true"></i> Quarterly Report
+                           </form>
+                           <div id='date-selection' class="date-selection" style='display:none'>
+                              <div class="col-md-2 col-xs-6 form-group mar-0p">
+                                 <input type="text" readonly="readonly" id="FromDate" name="FromDate" placeholder="Start date.." class="form-control input-md" value="">
+                              </div>
+                              <div class="col-md-2 col-xs-6 form-group  mar-0p">
+                                 <input type="text" readonly="readonly" id="ToDate" name="ToDate" placeholder="End date.." class="form-control input-md" value="">
+                              </div>
+                              <button type="submit" class="btn btn-primary monthly-report-sub f13 pa-1-9">Submit</button>
+                           </div>
+                        </div>
+                        <div class="box-body cust_hight-120">
+                           <div class=" height-115" id="Today-report">
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">1</h3>
+                                          <h3 class="bx_title " >Station </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/trainstation_icon.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!-- ./col -->
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">6</h3>
+                                          <h3 class="bx_title">Auditors </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/auditor_icon.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!-- ./col -->
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <!--  <img class="coming-soon" src="/access/img/coming-soon.png"> -->
+                                          <h3 class="f12 mar-b-5p">2</h3>
+                                          <h3 class="bx_title">Audits Done </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/total_feedback.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!-- ./col -->
+                              <!-- ./col -->
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <!--  <img class="coming-soon" src="/access/img/coming-soon.png"> -->
+                                          <h3 class="f12 mar-b-5p">3</h3>
+                                          <h3 class="bx_title">Pending Audits </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/trains.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">6</h3>
+                                          <h3 class="bx_title">Points </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/coaching.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                         <h3 class="f12 mar-b-5p">9</h3>
+                                          <h3 class="bx_title">Track Circuits </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/platforms.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="	height-115" id="month-report" style="display:none;">
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">1</h3>
+                                          <h3 class="bx_title" >
+										  Station</h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/trainstation_icon.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!-- ./col -->
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">6</h3>
+                                          <h3 class="bx_title">Auditors </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/auditor_icon.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!-- ./col -->
+                              <div class="col-lg-2 col-xs-6">
+                                 <!-- small box -->
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">2</h3>
+                                          <h3 class="bx_title">Audits Done  </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/total_feedback.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3 class="f12 mar-b-5p">3</h3>
+                                          <h3 class="bx_title">Pending Audits  </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/trains.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                          <h3>6</h3>
+                                          <h3 class="bx_title">Points  </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/coaching.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-2 col-xs-6">
+                                 <a href="#" class="" style="cursor: auto;">
+                                    <div class="small-box bg-fff">
+                                       <div class="inner">
+                                           <h3>9</h3>
+                                          <h3 class="bx_title">Track Circuits  </h3>
+                                       </div>
+                                       <div class="icon">
+                                          <img class="view_icon" src="access/img/platforms.png"> 
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <!-- Left col -->
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title">Monthly Performance Report </h3>
+                        </div>
+                        <div class="box-body cust_hight">
+                           <p class="mar_0">P & C</p>
+                           <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped-" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                 0% 
+                              </div>
+                           </div>
+                           
+                           <p class="mar_0">TAI</p>
+                           <div class="progress">
+                              <div class="progress-bar progress-bar-warning progress-bar-striped-" role="progressbar" aria-valuenow="872.66" aria-valuemin="0" aria-valuemax="100" style="width:87.27%">
+                                 87.27% 
+                              </div>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title">Auditor List </h3>
+                        </div>
+                        <div class="box-body cust_hight">
+                           <p class="mar_title"><span class="w30">NAME</span><span class="w30 align_center">DESIGNATION</span><span class="w30 align_right"> DEPARTMENT</span></p>
+                           <marquee direction="up" scrolldelay="300" onmouseover="this.stop();" onmouseout="this.start();" style="height:241px;">
+                              <div class="news_scroll">
+                                 <ul class="news sty_none ">
+                                    <li><span class="w30"><strong>Abhishek Dhoundiyal</strong></span> <span class="w30 align_center green">SSE</span> <span class="w30 align_right">SIGNAL</span></li>
+                                 </ul>
+                                 <ul class="news sty_none ">
+                                    <li><span class="w30"><strong>Ankit Patle</strong></span> <span class="w30 align_center green">SSE</span> <span class="w30 align_right">SIGNAL</span></li>
+                                 </ul>
+                                 
+                              </div>
+                           </marquee>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title">Notice Board </h3>
+                        </div>
+                        <div class="box-body cust_hight padd_0" >
+                           <div class="ads">  </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title"> Weekly Performance</h3>
+                        </div>
+                        <div class="box-body cust_hight bg_black">
+                           <div style="width: 100%; height: 160px; background:#32373a;" id="weekly-performance" ></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title">Weekly Aduit Count </h3>
+                        </div>
+                        <div class="box-body cust_hight bg_black">
+                           <div style="width: 100%; height: 175px; background:#32373a; display: inline-block" id="chart-container-fcount" ></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="boxs">
+                        <div class="box-header with-border">
+                           <i class="fa fa-server" aria-hidden="true"></i>
+                           <h3 class="box-title">Subscription / Weekly Performance Chart </h3>
+                        </div>
+                        <div class="box-body cust_hight" style="padding: 0px;">
+                           <div class="cust_chart subscription-chart wow bounceInRight animated" id="full_src_5" >
+                              <div class="  ">
+                                 <div class="" >
+                                    <div class="-">
+                                       <div class="---" >
+                                          <div class="main-summery-page">
+                                             <div class="content pa0">
+                                                <div class="ft-footer-box">
+                                                   <div class=" subscription-chart wow bounceInRight animated" id="full_src_5" style="visibility: visible; animation-name: bounceInUp;">
+                                                      <div class="bx-box footer-box">
+                                                         <div class="box-body pa-4-6">
+                                                            <div class="round-chart">
+                                                               <div class="progess-chart">
+                                                                  <div class="col-md-6 pa0 border1">
+                                                                     <div class="left-round-chart">
+                                                                        <div class="heder-title">
+                                                                           <h3>Subscription</h3>
+                                                                        </div>
+                                                                        <div id="demo-pie-3" class="pie-title-center" data-percent="7">
+                                                                           <span style="color:#bf940c;" class="pie-value">50%</span> 
+                                                                           <canvas height="0" width="150" class="r"></canvas>
+                                                                           <canvas height="0" width="150"></canvas>
+                                                                        </div>
+                                                                        <div class="footer-per">
+                                                                           <p><span><img class="w16" src="access/img/sub-use-day.png"></span>  25 Days <span><img class="w20" src="access/img/sub-total-day.png"></span>  365 Days</p>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-md-6 pa0 border1">
+                                                                     <div class="right-round-chart">
+                                                                        <div class="heder-title">
+                                                                           <h3>Weekly Performance</h3>
+                                                                        </div>
+                                                                        <div id="demo-pie-2" class="pie-title-center" data-percent="20">
+                                                                           <span style="color:#027102" class="pie-value">20%</span> 
+                                                                           <canvas height="0" width="150" class="r"></canvas>
+                                                                           <canvas height="0" width="150"></canvas>
+                                                                        </div>
+                                                                        <div class="footer-per">
+                                                                           <p id="wp-chart" title="4.54 point / 5 Points"><img class="w16" src="access/img/pr-point.png"> 20%  <img class="w20" src="access/img/sub-total-day.png"> 100%</p>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+		  <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+               <b>Version</b> 2.0
+            </div>
+            <strong>Copyright &copy; 2021 <a href="#">Beatle Buddy</a>.</strong> All rights
+            reserved.
+         </footer>
+       
+      </div>      
+      <!-- ./wrapper -->
+	  
+	   <!-- jQuery 3 -->
+      <script src="access/js/jquery.min.js"></script>
+      <!-- jQuery UI 1.11.4 -->
+      <script src="access/js/jquery-ui.min.js"></script>
+      <!-- Bootstrap 3.3.7 -->
+      <script src="access/js/bootstrap.min.js"></script>
+      <!-- daterangepicker -->
+      <script src="access/js/daterangepicker.js"></script>
+      <!-- datepicker -->
+      <script src="access/js/bootstrap-datepicker.min.js"></script>
+      <!-- weekly-performance START -->
+      <script src="access/js/RGraph.svg.common.core6.js"></script>
+      <script src="access/js/RGraph.svg.line5.js"></script>
+      <script src="access/js/RGraph.svg.common.tooltips4.js"></script>
+	  
+		<!-- AdminLTE App -->
+		<script src="access/js/adminlte.min.js"></script>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <script>
+         var linex = new RGraph.SVG.Line({
+             id: 'weekly-performance',
+             data:  [
+                 [1,0,0,2,0,0,5]
+                
+             ],
+         
+             options: {
+                 xaxisLabels:['FR','SA','SU','MO','TU','WE','TH'],
+         
+         
+                 labelsSize: 2,
+           yaxisUnitsPost: '',
+                 xaxisTextColor: '#fff',
+                 yaxisTextColor: '#fff',
+           tooltips: ['0','0','0','0','0','0','5'],
+               colors: ['#009200'],
+         shadow: true,
+         linewidth: 2,
+          shadowBlur: 3,
+          tickmarks: 'circle',
+                 gutterLeft:   25,
+                 gutterTop:    15,
+                 gutterRight:  25,
+                 gutterBottom: 25,
+                 ticksize: 5,
+         textColor: 'white',
+                 shadowOpacity: 0.25,
+         
+                 spline: true
+         
+                 
+             }
+         }).trace();
+      </script>
+      <!-- weekly-performance END -->
+      <!-- Weekly Aduit Count START -->
+      <script src="access/js/RGraph.svg.common.core3.js"></script>
+      <script src="access/js/RGraph.svg.common.tooltips2.js"></script>
+      <script src="access/js/RGraph.svg.bar1.js"></script>
+      <script>
+         new RGraph.SVG.Bar({
+             id: 'chart-container-fcount',
+             data: [0,0,0,0,3,3,2],
+             options: {
+                 colorsSequential: true,
+                 colors: ['Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)','Gradient(#86B5BC:#2196F3)'], 
+                 tooltips: ['P&C : 2<br>TAI : 2',
+							 'P&C : 2<br>TAI : 2',
+							 'P&C : 2<br>TAI : 2',
+							 'P&C : 2<br>TAI : 2',
+							 'P&C : 2<br>TAI : 1',
+							 'P&C : 2<br>TAI : 1',
+							 'P&C : 1<br>TAI : 1'],
+                 xaxisLabels: ['SA','SU','MO','TU','WE','TH','FR'],
+                 xaxisColor: '#aaa',
+                 yaxisColor: '#aaa',
+                 yaxisLabelsCount: 5,
+                 labelsAbove: true,
+         gutterLeft:   0,
+         gutterTop:    0,
+         gutterRight:  0,
+         gutterBottom: 0,
+         gutterLeft: 0,
+                 yaxisScaleUnitsPost: '',
+                 marginLeft: 30,
+           marginRight: 25,
+          marginTop: 22,
+           marginBottom: 38,
+         textColor: 'white',
+                 textSize: 9,
+                 hmargin: 15
+             }
+         }).draw().on('beforetooltip', function ()
+         {
+             RGraph.SVG.tooltips.style.backgroundColor = 'black';
+             RGraph.SVG.tooltips.style.color           = 'white';
+             RGraph.SVG.tooltips.style.fontWeight      = 'bold';
+         });
+      </script>
+      <!-- Weekly Aduit Count END -->
+      <!--  Subscription / Weekly Performance Chart START -->
+      <script src="access/js/pie-chart.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+            
+         
+             $('#demo-pie-2').pieChart({
+                 barColor: '#009200' ,
+                 trackColor:  '#f3fbf3',
+                 lineCap: 'butt',
+                 lineWidth: 15,
+                 onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                 }
+             });
+         
+             $('#demo-pie-3').pieChart({
+                 barColor: '#e5b00c',
+                 trackColor:    '#fffcf3',
+                 lineCap:'square',
+                 lineWidth: 15,
+                 onStep: function (from, to, percent) {
+                     $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                 }
+             });
+         
+             
+         });
+         
+      </script>
+      <!-- ubscription / Weekly Performance END -->
+      <!--    Top Today Report / Monthly Report START -->	  
+      <script>
+         $("input[name='test']").click(function () {
+             $('#Today-report').css('display', ($(this).val() === 'a') ? 'block':'none');
+              $('#month-report').css('display', ($(this).val() === 'b') ? 'block':'none');
+         	   $('#date-selection').css('display', ($(this).val() === 'b') ? 'block':'none');
+         });
+         
+         
+         
+      </script>
+      <!-- Top Today Report / Monthly Report END -->
+      <!--   Date START -->
+      <script>
+         $(document).ready(function() {
+             $("#FromDate").datepicker({
+                 format: 'dd-mm-yyyy'
+             });
+             $("#ToDate").datepicker({
+                 format: 'dd-mm-yyyy'
+             });
+             //document.forms["frmSearch"].submit();
+         });
+         
+         function validateDate() {
+         
+             var D1 = document.getElementById("ToDate");
+             var D2 = document.getElementById("FromDate");
+         
+             if (D1.value.trim() == "") {
+                 D1.style.border = "1px solid red";
+                 return false;
+             }
+         
+             if (D2.value.trim() == "") {
+                 D2.style.border = "1px solid red";
+                 return false;
+             }
+         }
+      </script> 
+      <!-- Date END -->
+	  
+	  <style>
+	  .box-body.cust_hight P {
+    border-bottom: 0px #bebebe dotted;
+   
+}
+.box-header.with-border {
+    background: #d0c9c9;
+}
+.content-wrapper::before {
+    background: #ecf0f5 !important;
+    opacity: 1 !important;
+	}
+	.box-header.with-border i, .box-header.with-border h3 {
+    color: #000;
+    font-weight: 600;
+}
+
+	
+	  </style>
+	
+   </body>
+</html>
