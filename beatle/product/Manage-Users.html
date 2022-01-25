@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Beatle
+    </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="access/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="access/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="access/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="access/css/all-skins.min.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="access/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="access/css/daterangepicker.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="access/css/font.css">
+    <!--style-->
+    <link rel="stylesheet" href="access/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	 <!-- SweetAlert2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+	
+	 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+	  
+	
+
+
+	
+  </head> 
+  <body class="skin-blue sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="mdashboard.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini">
+            <img class="view_icon" src="access/img/indian-railway-logo.png">
+          </span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <div class="navbar-custom-menu pull-left">
+            <ul class="nav navbar-nav">
+              <li class="pull-right page-name"> INDIAN RAILWAYS - Station 
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#" data-toggle="control-sidebar"> 
+                  <i class="fa fa-fw fa-sign-out">
+                  </i> Sign out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+                    <section class="sidebar">
+               <ul class="sidebar-menu" data-widget="tree">
+                  <li class="active"><a href="mdashboard.html">
+					<i class="fa fa-dashboard"></i>
+					<span>Dashboard</span>
+					</a>
+				  </li>
+				  <li class="">
+						<a href="user.html" class="pa-12-0 text-cen">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<span class="text-lf">All User </span>
+						</a>
+					</li>
+				    <li class=""><a href="profile.html" class="pa-12-0 text-cen">
+						<i class="fa fa-user" style=" margin-left: 3px;"></i>
+						<span class="text-lf">PROFILE</span>
+						</a>
+					</li>
+				  </ul>
+            </section>
+        <!-- /.sidebar -->
+      </aside>
+      <div class="content-wrapper manage-user">
+        <section class="content">
+		 <div class="row station_list" style="">
+            <div class="">
+              <div class="col-lg-6 col-sm-6" style="margin: 0 auto; float: none;">
+			
+                
+				<center><h1 class="f25 b600 title_text">Manage<span> Users</span></h1>
+			  <div class="title_img"><img src="access/img/title_w.png"></div>
+			  </center>  
+				
+				
+				
+				 <div class="bg_fff">
+                     <form method="" id="">
+        
+          <div class="col-lg-12 col-sm-12">
+		  
+		  <div class="form-group">
+		   <label for="email">User Select:
+            </label>
+            <select id="station" class="form-control">
+              <option value="1">ADRM</option>
+              <option value="1">Sr DEN/C/LMG</option>
+			   <option value="1">SR. DEN/IV/LMG</option>
+              <option value="1">SSE/W/N/LMG</option>
+			   <option value="1">SSE/W/WS/LMG</option>
+              <option value="1">SSE/W/S/LMG</option>
+			  
+             
+            </select>
+          </div>
+		  
+		  
+		  <div class="form-group">
+		   <label for="email">Roll Select:
+            </label>
+            <select id="station" class="form-control">
+              <option value="1">Upper Managers	
+              </option>
+              <option value="1">Colony Managers	
+              </option>
+             
+            </select>
+          </div>
+		  
+		  
+		  <div class="form-group" style=" margin-top: 41px;">
+            <label for="text" class="w115">Colony Type	 : 
+            </label>
+			<div class="">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="CTS"> TYPE-I           
+            </label>           
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="PMC"> TYPE-II           
+            </label> 
+
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC"> TYPE-III	
+				</label>
+			<label class="checkbox-inline">
+					<input type="checkbox" name="reportType[]" value="PMC"> TYPE-IV
+				</label>
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC"> TYPE-V
+				</label>		
+          </div>
+		   </div>
+		  
+		  		  <div class="form-group" style=" margin-top: 41px;">
+            <label for="text" class="w115">Colony Details : 
+            </label>
+			<div class="">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="CTS"> RELIEF YARD         
+            </label>           
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="PMC"> BRICF FIELD
+          
+            </label> 
+
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">NEW COLONY
+	
+				</label>
+			<label class="checkbox-inline">
+					<input type="checkbox" name="reportType[]" value="PMC"> SOUTH HILL
+
+				</label>
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC"> LOCO COLONY
+
+				</label>
+	<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">RPSF COLONY</label>
+	<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">SK PAUL TILA</label>
+				
+          </div>
+		   </div>
+		  
+		  
+		    <div class="form-group" style=" margin-top: 41px;">
+            <label for="text" class="w115">Colony Details : 
+            </label>
+			<div class="">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="CTS"> RELIEF YARD         
+            </label>           
+            <label class="checkbox-inline">
+              <input type="checkbox" name="reportType[]" value="PMC"> BRICF FIELD
+          
+            </label> 
+
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">NEW COLONY
+	
+				</label>
+			<label class="checkbox-inline">
+					<input type="checkbox" name="reportType[]" value="PMC"> SOUTH HILL
+
+				</label>
+			<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC"> LOCO COLONY
+
+				</label>
+	<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">RPSF COLONY</label>
+	<label class="checkbox-inline">
+						  <input type="checkbox" name="reportType[]" value="PMC">SK PAUL TILA</label>
+				
+          </div>
+		  </div>
+		  
+		  
+		  
+		    
+          
+         
+          
+		  
+		   </div>
+		  
+		   
+         
+		 
+		   <div class="col-lg-12 col-sm-12">
+		   
+		 
+          
+		   <center><a  type="" id="success" class="btn btn-success">Submit
+            </a> </center>
+		   </div>
+          
+            
+          
+        </form>
+                </div>
+				
+				
+
+			</div>
+            </div>
+            
+          </div>
+		  
+         
+         
+		 
+         
+		 
+		 
+		</section>
+      </div>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version
+          </b> 2.0
+        </div>
+        <strong>Copyright &copy; 2021 
+          <a href="#">Beatle Buddy
+          </a>.
+        </strong> All rights
+        reserved.
+      </footer>
+    </div>      
+    <!-- ./wrapper -->
+	
+    <!-- jQuery 3 -->
+    <script src="access/js/jquery.min.js">
+    </script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="access/js/jquery-ui.min.js">
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="access/js/bootstrap.min.js">
+    </script>
+    <!-- daterangepicker -->
+    <script src="access/js/daterangepicker.js">
+    </script>
+    <!-- datepicker -->
+    <script src="access/js/bootstrap-datepicker.min.js">
+    </script>
+    <!-- weekly-performance START -->
+    <script src="access/js/RGraph.svg.common.core6.js">
+    </script>
+    <script src="access/js/RGraph.svg.line5.js">
+    </script>
+    <script src="access/js/RGraph.svg.common.tooltips4.js">
+    </script>
+    <!-- AdminLTE App -->
+    <script src="access/js/adminlte.min.js"> </script>
+	
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+	
+	
+	
+	
+	
+  
+    <!-- weekly-performance END -->
+    <!-- Weekly Aduit Count START -->
+    <script src="access/js/RGraph.svg.common.core3.js">
+    </script>
+    <script src="access/js/RGraph.svg.common.tooltips2.js">
+    </script>
+    <script src="access/js/RGraph.svg.bar1.js">
+    </script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+	
+   
+    <!-- Weekly Aduit Count END -->
+    <!--  Subscription / Weekly Performance Chart START -->
+    <script src="access/js/pie-chart.js" type="text/javascript">
+    </script>
+    
+
+
+
+
+<style>
+table.dataTable tbody th, table.dataTable tbody td {text-align: center;}
+</style>
+		
+  </body>
+</html>
